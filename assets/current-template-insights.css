@@ -1,0 +1,43 @@
+/**
+ * CSS for Current Template Insights plugin admin bar display.
+ *
+ * Styles the admin bar node and its dropdown for better visibility.
+ */
+#wpadminbar #wp-admin-bar-current-template-insights .ab-sub-wrapper {
+  min-width: 380px;
+}
+
+#wpadminbar #wp-admin-bar-current-template-insights .ab-submenu {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+#wpadminbar #wp-admin-bar-current-template-insights .ab-submenu .ab-item {
+  display: inline-block;
+  line-height: 1.5em;
+  white-space: normal;
+  word-break: break-word;
+}
+
+#wpadminbar #wp-admin-bar-current-template-insights-template-hierarchy .ab-item,
+#wpadminbar #wp-admin-bar-current-template-insights-body-classes .ab-item,
+#wpadminbar #wp-admin-bar-current-template-insights-query-vars .ab-item {
+  font-size: 11px;
+}
+
+#wpadminbar #wp-admin-bar-current-template-insights-template-hierarchy,
+#wpadminbar #wp-admin-bar-current-template-insights-body-classes,
+#wpadminbar #wp-admin-bar-current-template-insights-query-vars {
+  margin-top: 6px;
+}
+
+#wpadminbar #wp-admin-bar-current-template-insights .ab-item span {
+  font-family: Menlo, Consolas, Monaco, monospace;
+  font-size: 14px;
+}
+
+#wpadminbar #wp-admin-bar-current-template-insights.current-template-insights-bar
+  > .ab-item {
+  background: linear-gradient(to bottom, #062c6a, transparent);
+  color: #fff;
+}
