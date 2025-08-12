@@ -3,7 +3,7 @@
 Displays the current template file and key page details in the WordPress admin bar for logged-in administrators.
 No setup required: just install, activate, and see the info bar on any front-end page.
 
-![Plugin Banner](assets/banner-1544x500.png)
+![Plugin Banner](https://raw.githubusercontent.com/macurious/current-template-insights/main/assets/banner-1544x500.png)
 
 ---
 
@@ -93,10 +93,10 @@ add_filter('current_template_insights_details', 'my_adjusted_template_details');
 ## Screenshots
 
 1. **Admin bar showing current template and details**  
-   ![Screenshot 1](assets/screenshot-1.png)
+   ![Screenshot 1](https://raw.githubusercontent.com/macurious/current-template-insights/main/assets/screenshot-1.png)
 
 2. **Example with CPT and extended debug info**  
-   ![Screenshot 2](assets/screenshot-2.png)
+   ![Screenshot 2](https://raw.githubusercontent.com/macurious/current-template-insights/main/assets/screenshot-2.png)
    
 ---
 
