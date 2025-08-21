@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Current Template Insights v1.0.0\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2025-07-30 15:43+0200\n"
+"POT-Creation-Date: 2025-08-21 23:02+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -17,97 +17,126 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-KeywordsList: "
+"__;_e;esc_html_e;esc_html_x:1,2c;esc_html__;esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Bookmarks: \n"
 "X-Generator: Poedit 3.6\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: inc/current-template-insights-data.php:76
+#: current-template-insights.php:114
+#, php-format
+msgid ""
+"%1$sCurrent Template Insights%2$s requires the WordPress admin bar to be "
+"enabled on the front end in order to display template details."
+msgstr ""
+"%1$sCurrent Template Insights%2$s setzt voraus, dass die WordPress-Admin-"
+"Leiste im Frontend aktiviert ist, um Template-Details anzeigen zu können."
+
+#: inc/current-template-insights-data.php:77
 msgid "default"
 msgstr "standard"
 
-#: inc/current-template-insights-data.php:80
+#: inc/current-template-insights-data.php:81
 msgid "Yes"
 msgstr "Ja"
 
-#: inc/current-template-insights-data.php:80
+#: inc/current-template-insights-data.php:81
 msgid "No"
 msgstr "Nein"
 
-#: inc/current-template-insights-data.php:84
+#: inc/current-template-insights-data.php:85
+#: inc/current-template-insights-render.php:32
 msgid "Full Path"
 msgstr "Vollständiger Pfad"
 
-#: inc/current-template-insights-data.php:85
+#: inc/current-template-insights-data.php:86
+#: inc/current-template-insights-render.php:33
 msgid "Template Hierarchy"
 msgstr "Template-Hierarchie"
 
-#: inc/current-template-insights-data.php:86
+#: inc/current-template-insights-data.php:87
+#: inc/current-template-insights-render.php:34
 msgid "Request URI"
 msgstr "Anforderungs-URI"
 
-#: inc/current-template-insights-data.php:89
+#: inc/current-template-insights-data.php:90
+#: inc/current-template-insights-render.php:35
 msgid "Main Query"
 msgstr "Hauptabfrage"
 
-#: inc/current-template-insights-data.php:90
+#: inc/current-template-insights-data.php:91
+#: inc/current-template-insights-render.php:36
 msgid "Post Type"
 msgstr "Beitrags-Typ"
 
-#: inc/current-template-insights-data.php:91
+#: inc/current-template-insights-data.php:92
+#: inc/current-template-insights-render.php:37
 msgid "Post ID"
 msgstr "Beitrags-ID"
 
-#: inc/current-template-insights-data.php:92
+#: inc/current-template-insights-data.php:93
+#: inc/current-template-insights-render.php:38
 msgid "Slug"
 msgstr "Titelform"
 
-#: inc/current-template-insights-data.php:93
+#: inc/current-template-insights-data.php:94
+#: inc/current-template-insights-render.php:39
 msgid "Query Vars"
 msgstr "Abfragevariablen"
 
-#: inc/current-template-insights-data.php:96
+#: inc/current-template-insights-data.php:97
+#: inc/current-template-insights-render.php:40
 msgid "Conditionals"
 msgstr "Bedingungen"
 
-#: inc/current-template-insights-data.php:97
+#: inc/current-template-insights-data.php:98
+#: inc/current-template-insights-render.php:41
 msgid "Body Classes"
 msgstr "Body Klassen"
 
-#: inc/current-template-insights-data.php:100
+#: inc/current-template-insights-data.php:101
+#: inc/current-template-insights-render.php:42
 msgid "Database Queries"
 msgstr "Datenbank-Abfragen"
 
-#: inc/current-template-insights-data.php:101
+#: inc/current-template-insights-data.php:102
+#: inc/current-template-insights-render.php:43
 msgid "Query Time"
 msgstr "Abfragezeit"
 
-#: inc/current-template-insights-data.php:102
+#: inc/current-template-insights-data.php:103
+#: inc/current-template-insights-render.php:44
 msgid "Memory Usage"
 msgstr "Speichernutzung"
 
-#: inc/current-template-insights-data.php:105
+#: inc/current-template-insights-data.php:106
+#: inc/current-template-insights-render.php:45
 msgid "Theme"
 msgstr "Theme"
 
-#: inc/current-template-insights-data.php:106
+#: inc/current-template-insights-data.php:107
+#: inc/current-template-insights-render.php:46
 msgid "Theme Version"
 msgstr "Theme Version"
 
-#: inc/current-template-insights-data.php:107
+#: inc/current-template-insights-data.php:108
+#: inc/current-template-insights-render.php:47
 msgid "WP Version"
 msgstr "WP Version"
 
-#: inc/current-template-insights-data.php:108
+#: inc/current-template-insights-data.php:109
+#: inc/current-template-insights-render.php:48
 msgid "PHP Version"
 msgstr "PHP Version"
 
-#: inc/current-template-insights-data.php:109
+#: inc/current-template-insights-data.php:110
+#: inc/current-template-insights-render.php:49
 msgid "Locale"
 msgstr "Lokalisierung"
 
-#: inc/current-template-insights-data.php:110
+#: inc/current-template-insights-data.php:111
+#: inc/current-template-insights-render.php:50
 msgid "Permalink Structure"
 msgstr "Permalink-Struktur"
 

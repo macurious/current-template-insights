@@ -5,7 +5,7 @@ Tags: admin bar, template, debug, theme, development
 Requires at least: 5.5
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,17 +31,20 @@ No setup required: just install, activate, and see the info bar on any front-end
 
 == Frequently Asked Questions ==
 
-= Does this work with Full Site Editing (block) themes? =  
-Yes! With block (Full Site Editing) themes, WordPress uses a core PHP file (`template-canvas.php`) as a wrapper for block templates. The plugin displays the actual PHP template in use. (Future versions may add a more descriptive message for block themes.)
-
 = Is there a settings page? =  
 No settings page — just install and go. All information is displayed in the admin bar for logged-in admins.
 
 = Why can't i see the template information on the front-end? =  
-The plugin displays its information in the WordPress admin bar. If the admin bar is disabled in the frontend (via user settings, code, or another plugin), then no output will be displayed.
+The plugin displays its information in the WordPress admin bar. If the admin bar is disabled in the front-end (via user settings, code or another plugin), then no output will be displayed.
 
 = Can I extend or customize the details shown? =  
-Yes, developers can use the `current_template_insights_details` filter hook to add or modify the debug info.
+Yes. Developers can use the `current_template_insights_details` filter hook to add or modify the debug info. See the plugin's [GitHub repository](https://github.com/macurious/current-template-insights) for an example. 
+
+= Does this work with Full Site Editing (block) themes? =  
+Yes. With block (Full Site Editing) themes, WordPress uses a core PHP file (`template-canvas.php`) as a wrapper for block templates. The plugin displays the actual PHP template in use. (Future versions may add a more descriptive message for block themes.)
+
+= Can I change the background color of the admin bar node? =  
+Yes. You can override it with custom CSS. See the plugin's [GitHub repository](https://github.com/macurious/current-template-insights) for an example.
 
 == Screenshots ==
 
@@ -50,11 +53,12 @@ Yes, developers can use the `current_template_insights_details` filter hook to a
 
 == Changelog ==
 
+= 1.0.1 =
+* Added admin notice when the front-end admin bar is disabled
+* Updated FAQ with customization info
+* Minor improvements to readme formatting
+
 = 1.0.0 =
 * First public release
 
-== Upgrade Notice ==
-
-= 1.0.0 =
-First public release.
 

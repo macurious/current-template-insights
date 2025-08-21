@@ -17,6 +17,7 @@
   line-height: 1.5em;
   white-space: normal;
   word-break: break-word;
+  cursor: text;
 }
 
 #wpadminbar #wp-admin-bar-current-template-insights-template-hierarchy .ab-item,
@@ -36,8 +37,7 @@
   font-size: 14px;
 }
 
-#wpadminbar #wp-admin-bar-current-template-insights.current-template-insights-bar
-  > .ab-item {
-  background: linear-gradient(to bottom, #062c6a, transparent);
+#wpadminbar #wp-admin-bar-current-template-insights.current-template-insights-bar > .ab-item {
+  background-color: #022154;
   color: #fff;
 }

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Current Template Insights
  * Description: Displays the current template file and key page info in the front end admin bar. No configuration required.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Plugin URI: https://wordpress.org/plugins/current-template-insights/
  * Author: Mark Colling
  * Author URI: https://mark-colling.com/
@@ -95,3 +95,32 @@ function currtempinsights_add_admin_bar( $wp_admin_bar ) {
     currtempinsights_render_admin_bar( $wp_admin_bar, $data['details'], $data['template_info'] );
 }
 add_action( 'admin_bar_menu', 'currtempinsights_add_admin_bar', 200 );
+
+/**
+ * Displays an admin notice if the admin bar is disabled on the front-end.
+ * @return void
+ */
+function currtempinsights_admin_bar_notice() {
+    if ( ! current_user_can( 'manage_options' ) ) {
+        return;
+    }
+
+    $user_id = get_current_user_id();
+    $user_pref = get_user_meta( $user_id, 'show_admin_bar_front', true );
+    $is_enabled = apply_filters( 'show_admin_bar', true );
+
+    /* translators: 1: opening <strong> tag, 2: closing </strong> tag. */
+    $notice = sprintf(
+        __( '%1$sCurrent Template Insights%2$s requires the WordPress admin bar to be enabled on the front end in order to display template details.', 'current-template-insights' ),
+        '<strong>',
+        '</strong>'
+    );
+    $allowed = array(
+        'strong' => array(),
+    );
+
+    if ( $user_pref === 'false' || ! $is_enabled ) {
+        echo '<div class="notice notice-warning"><p>' . wp_kses( $notice, $allowed ) . '</p></div>';
+    }
+}
+add_action( 'admin_notices', 'currtempinsights_admin_bar_notice' );
