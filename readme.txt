@@ -5,7 +5,7 @@ Tags: admin bar, template, debug, theme, development
 Requires at least: 5.5
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,6 +52,10 @@ Yes. You can override it with custom CSS. See the plugin's [GitHub repository](h
 2. More complex example showing the single post template of a CPT
 
 == Changelog ==
+
+= 1.0.2 =
+* Improved translation handling in dashboard notice (HTML tag support with sprintf)
+* Added missing translation for dashboard notice
 
 = 1.0.1 =
 * Added admin notice when the front-end admin bar is disabled

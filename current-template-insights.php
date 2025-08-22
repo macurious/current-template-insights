@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Current Template Insights
  * Description: Displays the current template file and key page info in the front end admin bar. No configuration required.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Plugin URI: https://wordpress.org/plugins/current-template-insights/
  * Author: Mark Colling
  * Author URI: https://mark-colling.com/
